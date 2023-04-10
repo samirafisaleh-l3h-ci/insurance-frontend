@@ -1,0 +1,11 @@
+apiVersion: environment.cloudbees.com/v1alpha1
+kind: GitRepository
+metadata:
+  name: samirafisaleh-l3h-ci-insurance-frontend                             
+  namespace: previews
+spec:
+  url: https://github.com/samirafisaleh-l3h-ci/insurance-frontend.git
+  apiTokenSecretRef:
+    name: beedemo-dev-github-token
+  autoUpdateContexts:                           
+  - default
